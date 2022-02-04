@@ -32,6 +32,8 @@ services:
             - ./app:/var/www/project
         networks:
             - nginx-php74-mysql8
+        command: composer create-project symfony/skeleton .
+        
 
     # mysql
     mysql8-service:
